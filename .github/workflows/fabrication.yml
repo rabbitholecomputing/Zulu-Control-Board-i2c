@@ -10,13 +10,13 @@ jobs:
     
     steps:
       - name: Check out code from GitHub
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
-          path: zuluscsi
+          path: control-board
       
       - name: Install dependencies
         run: |
-          sudo add-apt-repository --yes ppa:kicad/kicad-7.0-releases
+          sudo add-apt-repository --yes ppa:kicad/kicad-8.0-releases
           sudo apt-get update
           sudo apt-get install --no-install-recommends kicad python3 wget
           sudo apt-get install gsettings-backend libcairo2 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk2.0-0 libdxflib3
@@ -36,30 +36,30 @@ jobs:
         run: |
           export PATH=`pwd`/InteractiveHtmlBom/InteractiveHtmlBom:$PATH
           export INTERACTIVE_HTML_BOM_NO_DISPLAY=1
-          cd piscsi-hw/zulu-ctrl-board-v1.0-kicad
+          cd control-board/zulu-ctrl-board-v1.0-kicad
           ./kikit_run.sh
       
       - name: Upload JLCPCB gerbers
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          path: piscsi-hw/zulu-ctrl-board-v1.0-kicad/gerbers/jlcpcb.zip
+          path: control-board/zulu-ctrl-board-v1.0-kicad/gerbers/jlcpcb.zip
           name: Zulu Control Board gerbers for JLCPCB
 
       - name: Upload OSHPARK gerbers
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          path: piscsi-hw/zulu-ctrl-board-v1.0-kicad/gerbers/oshpark.zip
+          path: control-board/zulu-ctrl-board-v1.0-kicad/gerbers/oshpark.zip
           name: Zulu Control Board gerbers for OSHPARK
 
       - name: Upload PCBWAY gerbers
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          path: piscsi-hw/zulu-ctrl-board-v1.0-kicad/gerbers/pcbway.zip
+          path: control-board/zulu-ctrl-board-v1.0-kicad/gerbers/pcbway.zip
           name: Zulu Control Board gerbers for PCBWAY
 
       - name: Upload images
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          path: piscsi-hw/zulu-ctrl-board-v1.0-kicad/zulu-ctrl-board-v1.0-kicad/images/*
+          path: control-board/zulu-ctrl-board-v1.0-kicad/zulu-ctrl-board-v1.0-kicad/images/*
           name: Images of the PCB
 
