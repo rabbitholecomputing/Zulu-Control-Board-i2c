@@ -4,7 +4,7 @@
 # The exports can also be run from KiCAD GUI by installing the KiKit plugin.
 
 KIKIT="python -m kikit.ui"
-PROJECT=control-board
+PROJECT=ctrl_board
 
 mkdir -p images
 rm images/${PROJECT}_top.png images/${PROJECT}_bottom.png
