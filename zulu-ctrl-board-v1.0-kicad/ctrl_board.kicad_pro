@@ -60,10 +60,10 @@
         }
       ],
       "drc_exclusions": [
-        "copper_edge_clearance|145825000|178100000|e9b73ccd-9698-46cc-b81d-627bb0059b9d|95ba871e-f36e-4713-9211-4bdbac200f6a",
-        "copper_edge_clearance|145825000|183700000|e9b73ccd-9698-46cc-b81d-627bb0059b9d|af4c87b9-ad6d-4694-bfdf-169dede13c48",
-        "copper_edge_clearance|87175000|172350000|f6eca2fe-d65b-4742-ab8b-ff217988ff8f|7d974180-c054-43f5-99a4-04d48c50e425",
-        "copper_edge_clearance|87175000|177950000|f6eca2fe-d65b-4742-ab8b-ff217988ff8f|f1b5258f-7c81-490f-ae36-2779413032ee"
+        "copper_edge_clearance|145825000|167550000|e9b73ccd-9698-46cc-b81d-627bb0059b9d|95ba871e-f36e-4713-9211-4bdbac200f6a",
+        "copper_edge_clearance|145825000|173150000|e9b73ccd-9698-46cc-b81d-627bb0059b9d|af4c87b9-ad6d-4694-bfdf-169dede13c48",
+        "copper_edge_clearance|90175000|166850000|f6eca2fe-d65b-4742-ab8b-ff217988ff8f|7d974180-c054-43f5-99a4-04d48c50e425",
+        "copper_edge_clearance|90175000|172450000|f6eca2fe-d65b-4742-ab8b-ff217988ff8f|f1b5258f-7c81-490f-ae36-2779413032ee"
       ],
       "meta": {
         "filename": "board_design_settings.json",

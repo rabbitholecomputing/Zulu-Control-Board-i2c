@@ -2519,12 +2519,6 @@
 		(color 0 0 0 0)
 		(uuid "da25bf79-0abb-4fac-a221-ca5c574dfc29")
 	)
-	(junction
-		(at 226.06 26.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f21ea0d6-0ccb-4acf-9f98-069ede9b8a1d")
-	)
 	(no_connect
 		(at 74.93 193.04)
 		(uuid "024014a1-9dfa-435e-8af6-61746fa40b88")
@@ -2546,7 +2540,7 @@
 		(uuid "4a2b83e0-f562-4f00-bc22-9d77d4a8a4d4")
 	)
 	(no_connect
-		(at 228.6 26.67)
+		(at 220.98 26.67)
 		(uuid "6a21be74-2212-49b0-884d-289d34403bb9")
 	)
 	(no_connect
@@ -2789,16 +2783,6 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 26.67) (xy 228.6 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "62005e87-b52e-4413-83bb-823e3efb3395")
-	)
-	(wire
-		(pts
 			(xy 154.94 60.96) (xy 154.94 55.88)
 		)
 		(stroke
@@ -2806,16 +2790,6 @@
 			(type default)
 		)
 		(uuid "6241e6d3-a754-45b6-9f7c-e43019b93226")
-	)
-	(wire
-		(pts
-			(xy 220.98 26.67) (xy 226.06 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ac3ab53-7523-4805-bfd2-5de19dff127e")
 	)
 	(wire
 		(pts
@@ -3016,16 +2990,6 @@
 			(type default)
 		)
 		(uuid "a24ddb4f-c217-42ca-b6cb-d12da84fb2b9")
-	)
-	(wire
-		(pts
-			(xy 226.06 25.4) (xy 226.06 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a676113d-9d12-4482-82ec-868371cf1819")
 	)
 	(wire
 		(pts
@@ -6942,84 +6906,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 226.06 22.86 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8dd785d1-511d-4538-964b-312a69d957a7")
-		(property "Reference" "R5"
-			(at 228.6 21.59 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 223.52 21.59 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 226.06 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 226.06 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 226.06 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C17414"
-			(at 226.06 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c4c5a52a-59bb-4103-b05b-78908e6fcd3d")
-		)
-		(pin "2"
-			(uuid "abfd9792-d4b6-470f-8045-e1dfbf345ff4")
-		)
-		(instances
-			(project "ctrl_board"
-				(path "/a15a7506-eae4-4933-84da-9ad754258706"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 74.93 190.5 0)
 		(unit 1)
@@ -7242,69 +7128,6 @@
 			(project "ctrl_board"
 				(path "/a15a7506-eae4-4933-84da-9ad754258706"
 					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 226.06 20.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c21404c2-c0a8-47c1-b84b-d5bbab3079a4")
-		(property "Reference" "#PWR017"
-			(at 226.06 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 226.06 16.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 226.06 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 226.06 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 226.06 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a9e1c210-6895-4ef9-b132-65fd2c530546")
-		)
-		(instances
-			(project "ctrl_board"
-				(path "/a15a7506-eae4-4933-84da-9ad754258706"
-					(reference "#PWR017")
 					(unit 1)
 				)
 			)
